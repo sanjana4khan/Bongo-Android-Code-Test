@@ -40,4 +40,62 @@ boolean has_gas()
 }
 a) Explain how you can use the pattern to create car and plane class?
 b) Use a different design pattern for this solution.
+
+a)      
+           
+    interface Vehicle {
+       int set_num_of_wheels();
+       int set_num_of_passengers();
+       boolean has_gas();
+       }
+
+    class Plan implements Vehicle {
+
+
+    public int set_num_of_wheels() {
+      return 5;
+     }
+  
+
+
+    public int set_num_of_passengers() {
+      return 200;
+    }
+
+    @Override
+    public boolean has_gas() {
+       return true;
+    }
+    }
+
+    class Car implements Vehicle {
+    public int set_num_of_wheels() {
+        return 4;
+    }
+  
+
+   
+    public int set_num_of_passengers() {
+      return 4;
+    }
+
+  
+    public boolean has_gas() {
+       return true;
+    }
+    }
+
+    class NewClass {
+     public static void main(String[] args) {
+       Plan plan = new Plan();
+       plan.set_num_of_wheels();
+       plan.set_num_of_passengers();
+       plan.has_gas();
+    
+       Car car = new Car();
+       car.set_num_of_wheels();
+       car.set_num_of_passengers();
+       car.has_gas();
+     }
+    }
   
