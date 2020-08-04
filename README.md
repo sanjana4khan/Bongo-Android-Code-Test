@@ -3,6 +3,10 @@
 1) Write a function that detects if two strings are anagram e.g. ‘bleat’ and ‘table’
 are anagrams but ‘eat’ and ‘tar’ are not.
 
+
+
+
+
       function Anagram(char[] string1, char[] string2) 
        { 
         // Get lenghts of both strings 
