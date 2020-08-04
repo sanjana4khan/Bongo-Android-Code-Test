@@ -122,4 +122,28 @@ b)
 3) Write a video player application with ‘Play’, ‘Forward’, ‘Rewind’ functionalities. Please
 write pseudocode for this program and explain the design pattern you will use to
 develop these three functionalities.
+
+         function Play(View view){
+           if video is playing which will be checked by the isPlaying() method of VideoView class
+              then resume the video using resume() method of VideoView class
+            
+           else 
+              start the video using start() method of VideoView Class
+           }
+      
+        function Rewind(View view){
+          stop the video using stopPlayBack() method of VideoView Class
+          set the path of the video using setVideoPath() method of VideoView Class
+          start the video using start() method of VideoView Class          
+         }
+       
+        function Forward(View view){
+         get the current position by using getCurrentPostion() method of VideoView Class          
+         use seekTo() method of VideoView Class by adding required milisecond to current position to forward the video.
+        }
+    
+ I have implemented a Video Player App for design Pattern. Code has been uploaded here.   
+    
+          
+      
   
