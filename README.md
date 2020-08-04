@@ -117,4 +117,9 @@ b)
       Vehicle("Plan",5,200,true);
       }
      }
+     
+     
+3) Write a video player application with ‘Play’, ‘Forward’, ‘Rewind’ functionalities. Please
+write pseudocode for this program and explain the design pattern you will use to
+develop these three functionalities.
   
