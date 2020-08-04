@@ -98,4 +98,23 @@ a)
        car.has_gas();
      }
     }
+    
+b)
+
+     class NewClass {
+    
+     static void Vehicle(String vehicleName, int numOfWheels, int numOfPassengers, boolean hasGas)
+     {
+      System.out.println(""+vehicleName);
+      System.out.println("Wheels:" + numOfWheels);
+      System.out.println("Passengers:" + numOfPassengers);
+      System.out.println("Gas:" +  hasGas);
+      
+     }
+    
+     public static void main(String[] args) {
+      Vehicle("Car",4,4,true);
+      Vehicle("Plan",5,200,true);
+      }
+     }
   
