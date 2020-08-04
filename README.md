@@ -7,19 +7,16 @@ are anagrams but ‘eat’ and ‘tar’ are not.
 
 
 
-      function Anagram(char[] string1, char[] string2) 
-       { 
-        // Get lenghts of both strings 
-        int lenghtOfString1 = string1.length; 
-        int lenghtOfString2 = string2.length; 
+     
+        function Anagram(char[] string1, char[] string2) { 
       
+        int lenghtOfString1 = string1.length; 
+        int lenghtOfString2 = string2.length;
+        
         if (lenghtOfString1!= lenghtOfString2) 
         {
          return false; 
-        }
-           
-  
-        
+        } 
         Arrays.sort(string1); 
         Arrays.sort(string2); 
         
